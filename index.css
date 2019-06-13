@@ -1,3 +1,8 @@
+/* html {
+    background: black;
+    color: white;
+} */
+
 .logo {
     display: flex;
     justify-content: center;
@@ -15,22 +20,29 @@ ul {
     list-style: none;
 }
 
-.intro {
+.intro p {
     width: 30%;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: -200px;
+}
+
+.intro h2 {
+    margin-left: 5%;
 }
 
 .intro-img {
+    width: 500px;
     display: flex;
-    align-self: flex-end;
-    align-content: flex-end;
+    margin-left: 60%;
 }
 
 .work {
     margin-right: 5%;
+    margin-top: 20%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -38,6 +50,7 @@ ul {
 .major {
     display: flex;
     align-self: flex-end;
+    margin-right: 10%;
 }
 
 .work p {
@@ -46,8 +59,73 @@ ul {
     align-self: flex-end;
 }
 
+.work-img {
+    margin-left: 10%;
+}
+
+.work p {
+    margin-top: -250px;
+}
+
 .contact {
+    margin-top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.icons {
+    margin-left: -3%;
+}
+
+@media(max-width: 800px) {
+    .intro-img {
+        display: none;
+    }
+    
+    .intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -2%;
+    }
+    
+    .intro p {
+        margin-top: auto;
+        width: 50%;
+    }
+    
+    .work-img {
+        display: none;
+    }
+
+    .work {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work p {
+        margin: auto;
+        width: 50%;
+    }
+
+    .work h2 {
+        margin: 5% auto 5% auto;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .icons {
+        margin-left: -10%;
+    }
 }
